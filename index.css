@@ -32,6 +32,12 @@ html, body {
   flex-direction: row;
 }
 
+.logo-container {
+  position: relative;
+  top: 50px;
+  left: 169px;
+}
+
 .header-container__item-left {
   display: flex;
   flex-direction: row;
@@ -117,7 +123,7 @@ html, body {
   margin: 44px 110px 0 0;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-rows: 9.4% 9.4% 8.2% 9.4% 11.3% 18.8% 14.7% 18.8%;
   grid-template-columns: 20% 11% 18% 20% 31%;
@@ -279,8 +285,31 @@ html, body {
 }
 
 .grid-container__p22 {
+  position: relative;
   background-color: #eaeaea;
   grid-area: p22;
+}
+
+.grid-container__p22-text {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 70px;
+  margin-right: 67px;
+  z-index: 10;
+}
+
+.p22-img {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.p22-view-indent {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
 .grid-container__fiji {
