@@ -12,11 +12,9 @@
       <section class="logo-container">
         <a class="home-link direction-column" href="#">
           <img src="images/DSGN-logo.png" alt="DSGN logo" class="logo" />
-          <span class="logo-description">
-            ASSOCIATES<br />
-            STUDIO<br />
-            DESIGN
-          </span>
+          <span>ASSOCIATES</span>
+          <span>STUDIO</span>
+          <span>DESIGN</span>
         </a>
         <section class="social-panel">
           <a href="https://www.facebook.com" class="social-link-img">
@@ -25,7 +23,7 @@
           <a href="https://twitter.com/" class="social-link-img">
             <img src="icons/twitter.png" alt="twitter icon-link">
           </a>
-          <a href="http://linkedin.com" class="social-link-img">
+          <a href="https://linkedin.com" class="social-link-img">
             <img src="icons/linkedin.png" alt="linkedin icon-link">
           </a>
           <a href="https://plus.google.com/discover" class="social-link-img">
@@ -41,17 +39,17 @@
         <hr class="menu-btn" />
         <hr class="menu-btn" />
       </button>
-      <p class="header-container__address white-text">
-        90802 California<br />
-        Long beach<br />
-        PO Box 68789<br />
-        300 East Ocean <br />
-        Boulevard
-      </p>
-      <p class="header-container__contact-information white-text">
-        +64 9 345 6758<br />
-        info@dsgn-studio.com<br />
-      </p>
+      <address class="header-container__address white-text">
+        <span>90802 California</span>
+        <span>Long beach</span>
+        <span>PO Box 68789</span>
+        <span>300 East Ocean</span>
+        <span>Boulevard</span>
+      </address>
+      <section class="header-container__contact-information">
+        <a class="tel-n-mail white-text" href="tel:+6493456758">+64 9 345 6758</a>
+        <a class="tel-n-mail white-text" href="mailto:info@dsgn-studio.com">INFO@DSGN-STUDIO.COM</a>
+      </section>
     </div>
   </header>
   <main class="grid-container">
@@ -78,30 +76,39 @@
     <div class="grid-container__fondue">
       <section class="grid-container__fondue-text">
         <h2 class="big-title">FONDUE</h2>
-        <p class="goods-description">
-          <b>PROJECT ASSISTANT</b>: FRANCESCO DOMPIERI<br />
-          <b>MATERIAL</b>: GLASS AND METAL<br />
-          <b>TYPOLOGY</b>: SUSPENSION LAMP<br />
-          <b>MATERIAL</b>: DAVID DESIGN<br />
-          <b>YEAR</b>: 2014<br />
-        </p>
+        <section class="goods-description">
+          <span><b>PROJECT ASSISTANT</b>: FRANCESCO DOMPIERI</span>
+          <span><b>MATERIAL</b>: GLASS AND METAL</span>
+          <span><b>TYPOLOGY</b>: SUSPENSION LAMP</span>
+          <span><b>MATERIAL</b>: DAVID DESIGN</span>
+          <span><b>YEAR</b>: 2014</span>
+        </section>
         <a href="#" class="view-project-link fondue-view-indent">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
           VIEW PROJECT
         </a>
+      </section>
+      <section class="like-n-meter">
+        <button class="like fondue-like-indent" onclick="like()">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="21" viewBox="0 0 24 21">
+            <defs><path id="54f3a" d="M656.2 898.3L645.99 909l-10.22-10.7a6.1 6.1 0 0 1 0-8.56 5.96 5.96 0 0 1 8.48 0l1.74 2.14 1.75-2.14a5.96 5.96 0 0 1 8.48 0 6.1 6.1 0 0 1 0 8.56zm-6.48-8.21l-3.74 3.3-2.74-3.3a4.77 4.77 0 0 0-7.2 1c-1.13 1.7-1.44 3.84 0 5.3l9.94 10.61 9.94-10.61a3.8 3.8 0 0 0 0-5.3c-1.44-1.47-4.77-2.47-6.2-1z"/></defs><g><g transform="translate(-634 -888)"><use fill="#333" xlink:href="#54f3a"/></g></g>
+          </svg>
+        </button>
+        <p class="like-meter">0</p>
       </section>
       <img class="fondue-img" src="images/fondue.png" alt="Lamp - fondue">
     </div>
     <div class="grid-container__potter">
       <section class="grid-container__potter-text">
         <h2 class="big-title">POTTER</h2>
-        <p class="goods-description">
-          <b>FOR</b> STELTON<br />
-          Potter focuses on the functionality<br />
-          and process of preparing tea.<br />
-          a big sieve allows the flavor of to<br />
-          evenly brewed.<br />
-        </p>
+        <section class="goods-description">
+          <span><b>FOR</b> STELTON</span>
+          <p class="potter-description">
+            Potter focuses on the functionality and process
+            of preparing tea. a big sieve allows the flavor
+            of to evenly brewed.
+          </p>
+        </section>
         <a href="#" class="view-project-link">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
           VIEW PROJECT
@@ -114,12 +121,12 @@
       <section class="grid-container__tabano-text">
         <section class="text-container">
           <h2 class="big-title">TABANO</h2>
-          <p class="goods-description">
-            <b>DESIGNER</b>: PATRICIA URQUIOLA<br />
-            <b>TYPOLOGY</b>: ARMCHAIRS<br />
-            <b>CLIENT</b>: B&B ITALIA<br />
-            <b>YEAR</b>: 2014<br />
-          </p>
+          <section class="goods-description">
+            <span><b>DESIGNER</b>: PATRICIA URQUIOLA</span>
+            <span><b>TYPOLOGY</b>: ARMCHAIRS</span>
+            <span><b>CLIENT</b>: B&B ITALIA</span>
+            <span><b>YEAR</b>: 2014</span>
+          </section>
         </section>
         <a href="#" class="view-project-link tabano-view-indent">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
@@ -130,12 +137,12 @@
     <div class="grid-container__louisxx">
       <section class="grid-container__louisxx-text">
         <h2 class="big-title white-text">LOUIS XX</h2>
-        <p class="goods-description light-gray-text">
-          <b>DESIGNER</b>: PHILIPPE STARCK<br />
-          <b>TYPOLOGY</b>: CHAIRS<br />
-          <b>CLIENT</b>: VITRA<br />
-          <b>YEAR</b>: 2012<br />
-        </p>
+        <section class="goods-description light-gray-text">
+          <span><b>DESIGNER</b>: PHILIPPE STARCK</span>
+          <span><b>TYPOLOGY</b>: CHAIRS</span>
+          <span><b>CLIENT</b>: VITRA</span>
+          <span><b>YEAR</b>: 2012</span>
+        </section>
         <a href="#" class="view-project-link louisxx-view-indent white-text">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
           VIEW PROJECT
@@ -147,12 +154,12 @@
       <section class="grid-container__p22-text">
         <section class="text-container">
           <h2 class="big-title">395-396 P22</h2>
-          <p class="goods-description">
-            <b>DESIGNER</b>: PATRICK NORGUET<br />
-            <b>TYPOLOGY</b>: ARMCHAIRS<br />
-            <b>CLIENT</b>: CASSINA<br />
-            <b>YEAR</b>: 2013<br />
-          </p>
+          <section class="goods-description">
+            <span><b>DESIGNER</b>: PATRICK NORGUET</span>
+            <span><b>TYPOLOGY</b>: ARMCHAIRS</span>
+            <span><b>CLIENT</b>: CASSINA</span>
+            <span><b>YEAR</b>: 2013</span>
+          </section>
         </section>
         <a href="#" class="view-project-link p22-view-indent">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
@@ -165,11 +172,11 @@
       <img class="fiji-img" src="images/fiji.png" alt="Armchair - Fiji">
       <section class="grid-container__fiji-text">
         <h2 class="big-title">FIJI</h2>
-        <p class="goods-description">
-          <b>DESIGNER</b>: CUNO FROMMHERZ<br />
-          <b>TYPOLOGY</b>: ARMCHAIRS<br />
-          <b>YEAR</b>: 2012<br />
-        </p>
+        <section class="goods-description">
+          <span><b>DESIGNER</b>: CUNO FROMMHERZ</span>
+          <span><b>TYPOLOGY</b>: ARMCHAIRS</span>
+          <span><b>YEAR</b>: 2012</span>
+        </section>
         <a href="#" class="view-project-link fiji-view-indent">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
           VIEW PROJECT
@@ -181,12 +188,12 @@
       <section class="grid-container__sesann-text">
         <section class="text-container">
           <h2 class="big-title">SESANN</h2>
-          <p class="goods-description">
-            <b>DESIGNER</b>: GIANFRANCO FRATTINI<br />
-            <b>TYPOLOGY</b>: ARMCHAIRS<br />
-            <b>CLIENT</b>: CASSINA<br />
-            <b>YEAR</b>: 1970<br />
-          </p>
+          <section class="goods-description">
+            <span><b>DESIGNER</b>: GIANFRANCO FRATTINI</span>
+            <span><b>TYPOLOGY</b>: ARMCHAIRS</span>
+            <span><b>CLIENT</b>: CASSINA</span>
+            <span><b>YEAR</b>: 1970</span>
+          </section>
         </section>
         <a href="#" class="view-project-link sesann-view-indent">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
@@ -197,11 +204,11 @@
     <div class="grid-container__alessi">
       <section class="grid-container__alessi-text">
         <h2 class="big-title">ALESSI</h2>
-        <p class="goods-description">
-          <b>DESIGNER</b>: PIERO LISSONI<br />
-          <b>CLIENT</b>: ALESSI<br />
-          <b>YEAR</b>: 2013<br />
-        </p>
+        <section class="goods-description">
+          <span><b>DESIGNER</b>: PIERO LISSONI</span>
+          <span><b>CLIENT</b>: ALESSI</span>
+          <span><b>YEAR</b>: 2013</span>
+        </section>
         <a href="#" class="view-project-link alessi-view-indent">
           <svg class="view-project-link-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="15" viewBox="0 0 19 15"><defs><path id="kwk0a" d="M154 678h-.27l-7.01 7.01-.73-.73 6.28-6.28H135v-1h17.27l-6.28-6.28.73-.73 7.01 7.01h.27v.27l.01.01-.01.02v.4l.01.02-.01.01z"/></defs><g><g transform="translate(-135 -670)"><use fill="#edbb57" xlink:href="#kwk0a"/></g></g></svg>
           VIEW PROJECT
@@ -235,28 +242,28 @@
     <div class="grid-container__studio-description">
       <section class="studio-description__left-side">
         <p class="studio-description__text important-text">
-          Lorem ipsum dolor sit amet, consectetur adipisc-<br />
-          ing elit. Phasellus sollicitudin eros sit amet nulla<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus sollicitudin eros sit amet nulla
           rhoncus dictum.
         </p>
         <p class="studio-description__text important-text">
-          Nam rhoncus fringilla dolor vitae vulputate. Nullam<br />
-          quis eros lorem. Integer cursus erat a orci congue<br />
-          feugiat. Cras rhoncus mollis libero, id aliquet purus<br />
+          Nam rhoncus fringilla dolor vitae vulputate. Nullam
+          quis eros lorem. Integer cursus erat a orci congue
+          feugiat. Cras rhoncus mollis libero, id aliquet purus
           varius sed.
         </p>
         <p class="studio-description__text">
-          Aenean ullamcorper porta nisl, ac lobortis elit com-<br />
-          modo placerat.
+          Aenean ullamcorper porta nisl, ac lobortis elit
+          commodo placerat.
         </p>
         <p class="studio-description__text">
-          Vivamus eget laoreet enim. Sed nunc dui, egestas<br />
-          vel diam convallis, faucibus iaculis sapien. Sed ut<br />
+          Vivamus eget laoreet enim. Sed nunc dui, egestas
+          vel diam convallis, faucibus iaculis sapien. Sed ut
           vulputate nisi.
         </p>
         <p class="studio-description__text">
-          Proin tempor risus tellus. Maecenas sit amet<br />
-          fringilla urna, vel iaculis velit. Sed ac felis et sem<br />
+          Proin tempor risus tellus. Maecenas sit amet
+          fringilla urna, vel iaculis velit. Sed ac felis et sem
           mollis dictum sed id orci.
         </p>
       </section>
@@ -288,18 +295,18 @@
       <section class="designers-description__text">
         <span class="medium-title">STAFF.</span>
         <p class="designers-description__text-styles">
-          Sit amet laoreet sapien dictum. Sed eget eros<br />
-          augue. Pellentesque tempor mi sit amet nisi tincid-<br />
-          unt tincidunt. Fusce malesuada lectus sed mauris<br />
+          Sit amet laoreet sapien dictum. Sed eget eros
+          augue. Pellentesque tempor mi sit amet nisi tincidunt
+          tincidunt. Fusce malesuada lectus sed mauris
           pharetra faucibus.
         </p>
         <p class="designers-description__text-styles">
-          Aenean diam tortor, hendrerit ac pulvinar vel, con-<br />
-          dimentum ac velit. Phasellus eu odio elit. Aenean<br />
+          Aenean diam tortor, hendrerit ac pulvinar vel, condimentum
+          ac velit. Phasellus eu odio elit. Aenean
           volutpat mi quam, ut ornare augue tempus ut.
         </p>
         <p class="designers-description__text-styles">
-          Morbi sagittis diam mauris, in adipiscing nulla<br />
+          Morbi sagittis diam mauris, in adipiscing nulla 
           convallis ut.
         </p>
       </section>
@@ -421,26 +428,24 @@
     <div class="footer-grid__info">
       <section class="footer-grid__first-row">
         <section class="footer-grid__address-contacts">
-          <p class="footer-grid__address">
-            90802 California<br />
-            Long beach<br />
-            PO Box 68789<br />
-            300 East Ocean <br />
-            Boulevard
-          </p>
-          <p class="footer-grid__contacts">
-            +64 9 345 6758<br />
-            info@dsgn-studio.com<br />
-          </p>
+          <address class="footer-grid__address">
+            <span>90802 California</span>
+            <span>Long beach</span>
+            <span>PO Box 68789</span>
+            <span>300 East Ocean</span>
+            <span>Boulevard</span>
+          </address>
+          <section class="footer-grid__contacts">
+            <a class="tel-n-mail black-text" href="tel:+6493456758">+64 9 345 6758</a>
+            <a class="tel-n-mail black-text" href="mailto:info@dsgn-studio.com">info@dsgn-studio.com</a>
+          </section>
         </section>
         <section class="logo-container logo--position">
           <a class="home-link direction-column" href="#">
             <img src="images/DSGN-logo.png" alt="DSGN logo" class="logo" />
-            <span class="logo-description">
-              ASSOCIATES<br />
-              STUDIO<br />
-              DESIGN
-            </span>
+            <span>ASSOCIATES</span>
+            <span>STUDIO</span>
+            <span>DESIGN</span>
           </a>
           <section class="social-panel">
             <a href="https://www.facebook.com" class="social-link-img">

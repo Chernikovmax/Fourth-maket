@@ -73,14 +73,15 @@ html, body {
   margin-right: 13px;
 }
 
+/* Styles for header's right side */
+
 .header-container__item-right {
   position: relative;
   align-items: center;
   background-color: #7acec3;
-
 }
 
-.header-container__item-right:after {
+.header-container__item-right:before {
   content: '';
   position: absolute;
   left: 0;
@@ -94,9 +95,8 @@ html, body {
   background-size: cover;
 }
 
-/* Styles for header's right side */
-
 .menu-container {
+  position: relative;
   margin-top: 50px;
   width: 125px;
   height: 120px;
@@ -120,16 +120,22 @@ html, body {
 }
 
 .header-container__address {
+  width: 100px;
   position: absolute;
   bottom: 35%;
   left: 18%;
+  font-style: normal;
 }
 
 .header-container__contact-information {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 20%;
   right: 35%;
 }
+
+/* Here starts styles for the main part */
 
 .grid-container {
   display: grid;
@@ -145,6 +151,11 @@ html, body {
   'designers-description designers-description designers designers designers'
   'news news news-description news-description news-description';
   height: 2656px;
+}
+
+.goods-description {
+  display: flex;
+  flex-direction: column;
 }
 
 .grid-container__projects {
@@ -221,7 +232,37 @@ html, body {
 
 .fondue-view-indent {
   position: relative;
-  top: 45px;
+  top: 65px;
+}
+
+.like-n-meter {
+  display: flex;
+  flex-direction: column;
+}
+
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  height: 30px;
+  width: 30px;
+}
+
+.fondue-like-indent {
+  position: absolute;
+  bottom: 20%;
+  left: 24%;
+}
+
+.like-meter {
+  color: #ff0000;
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .grid-container__potter {
@@ -236,6 +277,11 @@ html, body {
   z-index: 10;
   top: 30px;
   left: 40px;
+  width: 30%;
+}
+
+.potter-description {
+  margin-top: 2px;
 }
 
 .potter-img {
@@ -271,7 +317,7 @@ html, body {
 
 .tabano-view-indent {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 29px;
   margin-left: 30px;
 }
 
@@ -291,7 +337,7 @@ html, body {
 
 .louisxx-view-indent {
   position: relative;
-  top: 18px;
+  top: 36px;
 }
 
 .louisxx-img {
@@ -327,7 +373,7 @@ html, body {
 .p22-view-indent {
   display: inline-block;
   margin-top: 25px;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 .grid-container__fiji {
@@ -381,7 +427,7 @@ html, body {
 
 .sesann-view-indent {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 29px;
   margin-left: 50px;
 }
 
@@ -477,6 +523,7 @@ html, body {
 }
 
 .studio-description__left-side {
+  width: 37%;
   margin: 45px 40px 20px 40px;
 }
 
@@ -527,6 +574,7 @@ html, body {
   position: relative;
   top: 13%;
   right: 7%;
+  width: 64%;
 }
 
 .grid-container__designers {
@@ -653,6 +701,12 @@ html, body {
   position: relative;
 }
 
+.footer-grid__address {
+  width: 100px;
+  position: relative;
+  font-style: normal;
+}
+
 .footer-grid__first-row {
   display: flex;
   flex-direction: row;
@@ -660,6 +714,16 @@ html, body {
   margin-top: 22.6%;
   margin-right: 20%;
   height: 64.5%;
+}
+
+.footer-grid__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.black-text {
+  color: #000;
 }
 
 .logo--position {
@@ -725,4 +789,8 @@ html, body {
 
 .light-gray-text {
   color: #fefefe;
+}
+
+.tel-n-mail {
+  text-decoration: none;
 }
