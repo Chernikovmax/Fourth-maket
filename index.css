@@ -152,12 +152,12 @@ html, body {
 }
 
 .popup-menu__wrapper:hover .menu-button {
-  border: 3px solid #96aaa6;
+  border: 3px solid #dff6f1;
   background-color: rgb(95, 199, 180);
 }
 
 .popup-menu__wrapper:hover .menu-button__item {
-  background-color: #96aaa6;
+  background-color: #dff6f1;
 }
 
 .popup-menu__item:hover {
