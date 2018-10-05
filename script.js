@@ -1,5 +1,12 @@
-var likes = 0;
-function like() {
-  dosument.getElementsByClassName("like-meter").innerHTML=likes;
-  likes=likes+1;
+const likeBox = document.querySelector('.like-n-meter');
+const like = likeBox.querySelector('.like');
+const likeMeter = likeBox.querySelector('.like-meter');
+let likeScore = 0;
+
+
+function likeScoreUp() {
+  likeMeter.value = "likeMeter.value++";
 }
+
+
+like.addEventListener('click', likeScoreUp());
