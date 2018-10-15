@@ -1,12 +1,9 @@
-const likeBox = document.querySelector('.like-n-meter');
-const like = likeBox.querySelector('.like');
-const likeMeter = likeBox.querySelector('.like-meter');
-let likeScore = 0;
+let likeStore = {};
 
-
-function likeScoreUp() {
-  likeMeter.value = "likeMeter.value++";
+function addLike(key) {
+  likeStore[key] = (likeStore[key] || 0) + 1;
+  const likeButton = document.querySelector(`[data-type="${key}-button"]`);
+  const likeMeter = document.querySelector(`[data-type="${key}-meter"]`);
+  likeMeter.innerText = `+${likeStore[key]}`;
+  likeButton.classList.add('active');
 }
-
-
-like.addEventListener('click', likeScoreUp());

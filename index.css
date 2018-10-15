@@ -130,7 +130,6 @@ html, body {
   border-radius: 5px;
   background-color: rgb(249, 245, 236);
   z-index: 10;
-  transition: all 1s ease;
   display: none;
 }
 
@@ -152,12 +151,12 @@ html, body {
 }
 
 .popup-menu__wrapper:hover .menu-button {
-  border: 3px solid #96aaa6;
+  border: 3px solid #dff6f1;;
   background-color: rgb(95, 199, 180);
 }
 
 .popup-menu__wrapper:hover .menu-button__item {
-  background-color: #96aaa6;
+  background-color: #dff6f1;
 }
 
 .popup-menu__item:hover {
@@ -320,7 +319,7 @@ html, body {
   position: absolute;
   z-index: 10;
   top: 18%;
-  left: 16%;
+  left: 15%;
 
 }
 
@@ -335,13 +334,21 @@ html, body {
 }
 
 .like-n-meter {
-  position: absolute;
-  bottom: 14%;
-  left: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 10;
+}
+
+.like-meter {
+  position: relative;
+  z-index: 10;
+}
+
+.fondue-like-position {
+  position: absolute;
+  bottom: 14%;
+  left: 25%;
 }
 
 .like {
@@ -353,12 +360,16 @@ html, body {
   border: none;
   cursor: pointer;
   z-index: 10;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
 }
 
-.active {
-  fill: #ff0000;
+.like path {
+  fill: rgba(238, 98, 73, 0.31);
+}
+
+.active path{
+  fill: #e84b29;
 }
 
 .like-meter {
@@ -377,8 +388,8 @@ html, body {
 .grid-container__potter-text {
   position: absolute;
   z-index: 10;
-  top: 30px;
-  left: 40px;
+  top: 3%;
+  left: 10%;
   width: 30%;
 }
 
@@ -391,36 +402,10 @@ html, body {
   right: 0;
 }
 
-.grid-container__tabano {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-color: #e9eae2;
-  grid-area: tabano;
-  overflow: auto;
-}
-
-.tabano-img {
+.potter-like-position {
   position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.grid-container__tabano-text {
-  position: absolute;
-  bottom: 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-.tabano-view-indent {
-  display: inline-block;
-  margin-top: 29px;
-  margin-left: 30px;
+  bottom: 5%;
+  left: 20%;
 }
 
 .grid-container__louisxx {
@@ -449,6 +434,12 @@ html, body {
   z-index: 1;
 }
 
+.louisxx-like-position {
+  position: absolute;
+  bottom: 46%;
+  left: 22%;
+}
+
 .grid-container__p22 {
   position: relative;
   background-color: #eaeaea;
@@ -461,8 +452,8 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 70px;
-  margin-right: 67px;
+  margin-top: 6rem;
+  margin-right: 6rem;
   z-index: 10;
 }
 
@@ -474,8 +465,52 @@ html, body {
 
 .p22-view-indent {
   display: inline-block;
-  margin-top: 25px;
-  margin-left: 50px;
+  margin-top: 3rem;
+  margin-left: 3rem  ;
+}
+
+.p22-like-position {
+  position: absolute;
+  top: 12rem;
+  right: 8.5rem;
+}
+
+.grid-container__tabano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #e9eae2;
+  grid-area: tabano;
+  overflow: auto;
+}
+
+.tabano-img {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.grid-container__tabano-text {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.tabano-view-indent {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.tabano-like-position {
+  position: absolute;
+  bottom: 3rem;
+  right: 7rem;
 }
 
 .grid-container__fiji {
@@ -491,14 +526,25 @@ html, body {
 .grid-container__fiji-text {
   position: absolute;
   z-index: 10;
-  top: 30px;
+  top: 13%;
   right: 75px;
+}
+
+.fiji-view-indent {
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 
 .fiji-img {
   position: absolute;
   left: 0;
   z-index: 1;
+}
+
+.fiji-like-position {
+  position: absolute;
+  bottom: 3%;
+  right: 18%;
 }
 
 .grid-container__sesann {
@@ -519,7 +565,7 @@ html, body {
 
 .grid-container__sesann-text {
   position: absolute;
-  bottom: 0;
+  bottom: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -529,8 +575,14 @@ html, body {
 
 .sesann-view-indent {
   display: inline-block;
-  margin-top: 29px;
-  margin-left: 50px;
+  margin-top: 2.2rem;
+  margin-left: 3rem;
+}
+
+.sesann-like-position {
+  position: absolute;
+  bottom: 7%;
+  right: 25%;
 }
 
 .grid-container__alessi {
@@ -545,15 +597,26 @@ html, body {
 
 .grid-container__alessi-text {
   position: absolute;
-  top: 70px;
-  right: 35px;
+  top: 25%;
+  right: 7%;
   z-index: 10;
+}
+
+.alessi-view-indent {
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 .alessi-img {
   position: absolute;
   z-index: 1;
   left: 0;
+}
+
+.alessi-like-position {
+  position: absolute;
+    bottom: 3%;
+  right: 15%;
 }
 
 .grid-container__timeline {
