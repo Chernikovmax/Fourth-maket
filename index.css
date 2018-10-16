@@ -4,14 +4,14 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    font-family: 'Roboto Condensed';
-    font-size: 12px;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Roboto Condensed';
+  font-size: 12px;
+  font-weight: 400;
 }
 
 /* Styles for header's left side */
@@ -348,7 +348,7 @@ html, body {
 .fondue-like-position {
   position: absolute;
   bottom: 14%;
-  left: 21%;
+  left: 23%;
 }
 
 .like {
@@ -471,8 +471,8 @@ html, body {
 
 .p22-like-position {
   position: absolute;
-  top: 12rem;
-  right: 8.5rem;
+  top: 15rem;
+  right: 10rem;
 }
 
 .grid-container__tabano {
@@ -942,6 +942,9 @@ html, body {
   color: #333;
   font-size: 18px;
   font-weight: 300;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .view-project-link-arrow {
@@ -958,4 +961,52 @@ html, body {
 
 .tel-n-mail {
   text-decoration: none;
+}
+
+
+/* Styles for modal boxes */
+
+.modalbox__background {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 14;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0, 0.7);
+}
+
+.modalbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid gray;
+  border-radius: 20px;
+  z-index: 15;
+}
+
+.modalbox__fondue {
+  display: none;
+  width: 942px;
+  height: 565px;
+}
+
+.modalbox-close {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  color: rgb(121, 66, 10);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.modalbox-close:hover,
+.modalbox-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
