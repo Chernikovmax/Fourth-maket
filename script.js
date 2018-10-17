@@ -10,26 +10,50 @@ function addLike(key) {
 
 // Modal boxes
 
-const modalBoxBackground = document.querySelector('.modalbox__background');
+function modalBackgroundOn(key) {
 
+  const modalBoxBackground = document.querySelector(`[data-type="${key}-modal-background"]`);
+  modalBoxBackground.classList.add('modalbox--active');
+}
+
+function modalBackgroundOff(key) {
+  const modalBoxBackground =  document.querySelector(`[data-type="${key}-modal-background"]`);
+  modalBoxBackground.classList.remove('modalbox--active');
+}
 
 function openModalBox(key) {
   const modalBox = document.querySelector(`[data-type="${key}-modalbox"]`);
-  modalBox.style.display = "block";
-  modalBoxBackground.style.display = "block";
+  modalBox.classList.add('modalbox--active');
+  modalBackgroundOn(key);
 }
 
 function closeModalbox(key) {
   const modalBox = document.querySelector(`[data-type="${key}-modalbox"]`);
   const closeModalBtn = document.querySelector(`[data-type="${key}-close-modalbox"]`);
-  modalBox.style.display = "none";
-  modalBoxBackground.style.display = "none";
+  modalBox.classList.remove('modalbox--active');
+  modalBackgroundOff(key);
 }
 
-/*window.onclick = function(event) {
-  if (event.target == modalBoxBackground) {
-    modalBox.style.display = "none";
-    modalBoxBackground.style.display = "none";
-  }
-};
-*/
+// modal.addEventListener('click', function(event) {
+//   var isClickInside = modalDialog.contains(event.target);
+//
+//   if (!isClickInside) {
+//     //the click was outside the specifiedElement, do something
+//     closeModal();
+//   }
+// });
+
+
+  // window.onclick = function(event) {
+  //   if (event.target == modalBoxBackground) {
+  //     modalBox.style.display = "none";
+  //     modalBoxBackground.style.display = "none";
+  //   }
+  // };
+
+
+  // modal.addEventListener('click', function (e) {
+  //   if (e.target === e.currentTarget) {
+  //     modal.style.display = 'none';
+  //   }
+  // });

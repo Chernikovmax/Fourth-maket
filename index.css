@@ -977,6 +977,7 @@ html, body {
 }
 
 /* Global styles for modal boxes */
+
 .modalbox {
   position: fixed;
   top: 50%;
@@ -985,6 +986,10 @@ html, body {
   border-radius: 15px;
   background-color: rgb(246, 223, 162);
   z-index: 15;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .modalbox__text {
@@ -1119,4 +1124,8 @@ html, body {
   bottom: 20%;
   left: 0;
   border-radius: 0 15px 15px 0;
+}
+
+.modalbox--active {
+  display: block;
 }
