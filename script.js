@@ -11,7 +11,6 @@ function addLike(key) {
 // Modal boxes
 
 function modalBackgroundOn(key) {
-
   const modalBoxBackground = document.querySelector(`[data-type="${key}-modal-background"]`);
   modalBoxBackground.classList.add('modalbox--active');
 }
@@ -29,10 +28,10 @@ function openModalBox(key) {
 
 function closeModalbox(key) {
   const modalBox = document.querySelector(`[data-type="${key}-modalbox"]`);
-  const closeModalBtn = document.querySelector(`[data-type="${key}-close-modalbox"]`);
   modalBox.classList.remove('modalbox--active');
   modalBackgroundOff(key);
 }
+
 
 // modal.addEventListener('click', function(event) {
 //   var isClickInside = modalDialog.contains(event.target);
