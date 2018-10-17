@@ -320,7 +320,6 @@ html, body {
   z-index: 10;
   top: 18%;
   left: 15%;
-
 }
 
 .fondue-img {
@@ -977,26 +976,31 @@ html, body {
   background-color: rgba(0,0,0, 0.7);
 }
 
+/* Global styles for modal boxes */
 .modalbox {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1.5px solid gray;
-  border-radius: 20px;
+  border-radius: 15px;
+  background-color: rgb(246, 223, 162);
   z-index: 15;
 }
 
-.modalbox__fondue {
-  display: none;
-  width: 942px;
-  height: 565px;
+.modalbox__text {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  z-index: 15;
 }
 
 .modalbox-close {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 7px;
+  background-color: transparent;
+  border: none;
   color: rgb(121, 66, 10);
   text-align: center;
   font-size: 30px;
@@ -1009,4 +1013,110 @@ html, body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Styles for local grid areas */
+
+.modalbox__fondue {
+  display: none;
+  width: 800px;
+  height: 500px;
+}
+
+.modalbox__potter {
+  display: none;
+  width: 900px;
+  height: 500px;
+}
+
+.modalbox-potter-img {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.modalbox__tabano {
+  display: none;
+  width: 730px;
+  height: 440px;
+}
+
+.modalbox-tabano-img {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.modalbox__fiji {
+  display: none;
+  width: 630px;
+  height: 410px;
+}
+
+.modalbox-fiji-img {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.modalbox__louisxx {
+  display: none;
+  width: 600px;
+  height: 410px;
+}
+
+.modalbox-louisxx-img {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.modalbox__p22 {
+  display: none;
+  width: 640px;
+  height: 410px;
+}
+
+.modalbox-p22-img {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  border-radius: 15px;
+}
+
+.modalbox__text-p22 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  z-index: 15;
+  background-color: #eaeaea;
+  border-radius: 15px;
+  padding: 0 15px 15px 15px;
+}
+
+.modalbox__sesann {
+  display: none;
+  width: 990px;
+  height: 480px;
+}
+
+.modalbox-sesann-img {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  border-radius: 15px;
+}
+
+.modalbox__alessi {
+  display: none;
+  width: 540px;
+  height: 380px;
+}
+
+.modalbox-alessi-img {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  border-radius: 0 15px 15px 0;
 }

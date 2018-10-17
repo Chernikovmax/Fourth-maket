@@ -12,13 +12,24 @@ function addLike(key) {
 
 const modalBoxBackground = document.querySelector('.modalbox__background');
 
-function useModalBox(key) {
+
+function openModalBox(key) {
   const modalBox = document.querySelector(`[data-type="${key}-modalbox"]`);
   modalBox.style.display = "block";
   modalBoxBackground.style.display = "block";
+}
 
-  document.querySelector(".modalbox-close").addEventListener('click', function() {
+function closeModalbox(key) {
+  const modalBox = document.querySelector(`[data-type="${key}-modalbox"]`);
+  const closeModalBtn = document.querySelector(`[data-type="${key}-close-modalbox"]`);
+  modalBox.style.display = "none";
+  modalBoxBackground.style.display = "none";
+}
+
+/*window.onclick = function(event) {
+  if (event.target == modalBoxBackground) {
     modalBox.style.display = "none";
     modalBoxBackground.style.display = "none";
-  });
-}
+  }
+};
+*/
