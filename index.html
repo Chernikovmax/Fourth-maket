@@ -519,10 +519,55 @@
 
     <div class="modalboxes">
 
+      <!--
+      i mean that modals should be like that:
+      inactive structure
+
+      <section class="modal-dialog">
+        <a href="#" class="modal-dialog__background"/>
+        <section class="modal-dialog__container">
+          <section class="modal-dialog__header">
+            <button onclick="toggleModalDialog('fondue')" class="modalbox-close">&times;</button>
+          </section>
+          <section class="modal-dialog__content">
+            <h2 class="big-title">FONDUE</h2>
+            <section class="goods-description">
+              <span><b>PROJECT ASSISTANT</b>: FRANCESCO DOMPIERI</span>
+              <span><b>MATERIAL</b>: GLASS AND METAL</span>
+              <span><b>TYPOLOGY</b>: SUSPENSION LAMP</span>
+              <span><b>MATERIAL</b>: DAVID DESIGN</span>
+              <span><b>YEAR</b>: 2014</span>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      active structure
+
+      <section class="modal-dialog modal-dialog--active">
+        <a href="#" class="modal-dialog__background"/>
+        <section class="modal-dialog__container">
+          <section class="modal-dialog__header">
+            <button onclick="toggleModalDialog('fondue')" class="modalbox-close">&times;</button>
+          </section>
+          <section class="modal-dialog__content">
+            <h2 class="big-title">FONDUE</h2>
+            <section class="goods-description">
+              <span><b>PROJECT ASSISTANT</b>: FRANCESCO DOMPIERI</span>
+              <span><b>MATERIAL</b>: GLASS AND METAL</span>
+              <span><b>TYPOLOGY</b>: SUSPENSION LAMP</span>
+              <span><b>MATERIAL</b>: DAVID DESIGN</span>
+              <span><b>YEAR</b>: 2014</span>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      -->
+
       <div data-type="fondue-modal-background" class="modalbox__background"></div>
 
       <section data-type="fondue-modalbox" class="modalbox__fondue modalbox">
-        <button onclick="toggleModalDialog('fondue')" class="modalbox-close">&times;</button>
         <img src="images/modalboxes/fondue.png" alt="Fondue">
         <section class="modalbox__text">
           <h2 class="big-title">FONDUE</h2>
