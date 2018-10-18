@@ -32,27 +32,10 @@ function closeModalbox(key) {
   modalBackgroundOff(key);
 }
 
-
-// modal.addEventListener('click', function(event) {
-//   var isClickInside = modalDialog.contains(event.target);
-//
-//   if (!isClickInside) {
-//     //the click was outside the specifiedElement, do something
-//     closeModal();
-//   }
-// });
-
-
-  // window.onclick = function(event) {
-  //   if (event.target == modalBoxBackground) {
-  //     modalBox.style.display = "none";
-  //     modalBoxBackground.style.display = "none";
-  //   }
-  // };
-
-
-  // modal.addEventListener('click', function (e) {
-  //   if (e.target === e.currentTarget) {
-  //     modal.style.display = 'none';
-  //   }
-  // });
+function outsideModalClick(key) {
+  const modalBoxBackground =  document.querySelectorAll(`[data-type="${key}-modal-background"]`);
+  for (let i = 0; i < modalBoxBackground.length; i++) {
+    const currentBackground = modalBoxBackground[i];
+    currentBackground.addEventListener('click', closeModalbox(key));
+  }
+}
