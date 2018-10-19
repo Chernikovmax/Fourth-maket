@@ -965,8 +965,13 @@ html, body {
 
 /* Styles for modal boxes */
 
-.modalbox__background {
+
+.modal-dialog {
   display: none;
+}
+
+.modal-dialog__background {
+  display: block;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -976,9 +981,8 @@ html, body {
   background-color: rgba(0,0,0, 0.7);
 }
 
-/* Global styles for modal boxes */
-
 .modalbox {
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -992,7 +996,7 @@ html, body {
   transition: all 1s ease;
 }
 
-.modalbox__text {
+.modal-dialog__content {
   font-size: 1.5rem;
   position: absolute;
   top: 30%;
@@ -1023,13 +1027,11 @@ html, body {
 /* Styles for local grid areas */
 
 .modalbox__fondue {
-  display: none;
   width: 800px;
   height: 500px;
 }
 
 .modalbox__potter {
-  display: none;
   width: 900px;
   height: 500px;
 }
@@ -1041,7 +1043,6 @@ html, body {
 }
 
 .modalbox__tabano {
-  display: none;
   width: 730px;
   height: 440px;
 }
@@ -1053,7 +1054,6 @@ html, body {
 }
 
 .modalbox__fiji {
-  display: none;
   width: 630px;
   height: 410px;
 }
@@ -1065,7 +1065,6 @@ html, body {
 }
 
 .modalbox__louisxx {
-  display: none;
   width: 600px;
   height: 410px;
 }
@@ -1077,7 +1076,6 @@ html, body {
 }
 
 .modalbox__p22 {
-  display: none;
   width: 640px;
   height: 410px;
 }
@@ -1089,7 +1087,7 @@ html, body {
   border-radius: 15px;
 }
 
-.modalbox__text-p22 {
+.modal-dialog__content-p22 {
   font-size: 1.5rem;
   position: absolute;
   top: 10%;
@@ -1101,7 +1099,6 @@ html, body {
 }
 
 .modalbox__sesann {
-  display: none;
   width: 990px;
   height: 480px;
 }
@@ -1114,7 +1111,6 @@ html, body {
 }
 
 .modalbox__alessi {
-  display: none;
   width: 540px;
   height: 380px;
 }
@@ -1126,6 +1122,6 @@ html, body {
   border-radius: 0 15px 15px 0;
 }
 
-.modalbox--active {
+.modal-dialog--active {
   display: block;
 }
