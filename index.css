@@ -4,14 +4,14 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    font-family: 'Roboto Condensed';
-    font-size: 12px;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Roboto Condensed';
+  font-size: 12px;
+  font-weight: 400;
 }
 
 /* Styles for header's left side */
@@ -320,7 +320,6 @@ html, body {
   z-index: 10;
   top: 18%;
   left: 15%;
-
 }
 
 .fondue-img {
@@ -348,7 +347,7 @@ html, body {
 .fondue-like-position {
   position: absolute;
   bottom: 14%;
-  left: 21%;
+  left: 23%;
 }
 
 .like {
@@ -471,8 +470,8 @@ html, body {
 
 .p22-like-position {
   position: absolute;
-  top: 12rem;
-  right: 8.5rem;
+  top: 15rem;
+  right: 10rem;
 }
 
 .grid-container__tabano {
@@ -942,6 +941,9 @@ html, body {
   color: #333;
   font-size: 18px;
   font-weight: 300;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .view-project-link-arrow {
@@ -958,4 +960,168 @@ html, body {
 
 .tel-n-mail {
   text-decoration: none;
+}
+
+
+/* Styles for modal boxes */
+
+
+.modal-dialog {
+  display: none;
+}
+
+.modal-dialog__background {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 14;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0, 0.7);
+}
+
+.modalbox {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: rgb(246, 223, 162);
+  z-index: 15;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.modal-dialog__content {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  z-index: 15;
+}
+
+.modalbox-close {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  background-color: transparent;
+  border: none;
+  color: rgb(121, 66, 10);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.modalbox-close:hover,
+.modalbox-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styles for local grid areas */
+
+.modalbox__fondue {
+  width: 800px;
+  height: 500px;
+}
+
+.modalbox__potter {
+  width: 900px;
+  height: 500px;
+}
+
+.modalbox-potter-img {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.modalbox__tabano {
+  width: 730px;
+  height: 440px;
+}
+
+.modalbox-tabano-img {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.modalbox__fiji {
+  width: 630px;
+  height: 410px;
+}
+
+.modalbox-fiji-img {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.modalbox__louisxx {
+  width: 600px;
+  height: 410px;
+}
+
+.modalbox-louisxx-img {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.modalbox__p22 {
+  width: 640px;
+  height: 410px;
+}
+
+.modalbox-p22-img {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  border-radius: 15px;
+}
+
+.modal-dialog__content-p22 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  z-index: 15;
+  background-color: #eaeaea;
+  border-radius: 15px;
+  padding: 0 15px 15px 15px;
+}
+
+.modalbox__sesann {
+  width: 990px;
+  height: 480px;
+}
+
+.modalbox-sesann-img {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  border-radius: 15px;
+}
+
+.modalbox__alessi {
+  width: 540px;
+  height: 380px;
+}
+
+.modalbox-alessi-img {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.modal-dialog--active {
+  display: block;
 }
